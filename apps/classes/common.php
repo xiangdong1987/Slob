@@ -129,14 +129,14 @@ function in_ip_range($ip, $ip_one, $ip_two = false) {
  * @return type
  */
 function getRequest($name,$default=0,$is_int=false){
-	if(isset($_GET[$name])){
+	if(isset($_GET[$name])&&$_GET[$name]){
 		if($is_int){
 			return is_int((int)$_GET[$name]) ? $_GET[$name] : $default;
 		}else{
 			return addslashes($_GET[$name]);
 		}
 	}
-	if(isset($_POST[$name])){
+	if(isset($_POST[$name])&&$_POST[$name]){
 		if($is_int){
 			return is_int((int)$_POST[$name]) ? $_POST[$name] : $default;
 		}else{

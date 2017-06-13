@@ -1,5 +1,4 @@
 <?php
-
 namespace App;
 
 use Swoole;
@@ -20,7 +19,7 @@ class BasicController extends Swoole\Controller {
 	function __construct(Swoole $swoole) {
 		parent::__construct($swoole);
 		Swoole::$php->session->start();
-		Swoole\Auth::login_require();
+		Swoole\Auth::loginRequire();
 	}
 
 	/**

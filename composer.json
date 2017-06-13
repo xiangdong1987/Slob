@@ -1,18 +1,20 @@
 {
-    "name"       : "matyhtf/swoole_framework",
-    "description": "PHP Networking framework & Application Server.",
-    "type"       : "library",
-    "keywords"   : ["library", "websocket", "server", "webserver", "client", "socket", "framework"],
-    "homepage"   : "http://www.swoole.com/",
-    "license"    : "LGPL",
-    "autoload": {
-        "psr-0": {"Swoole": "libs/"}
-    },
-    "authors"    : [
-        {
-            "name" : "Tianfeng Han",
-            "email": "mikan.tenny@gmail.com"
+  "repositories": [
+    {
+      "type": "package",
+      "package": {
+        "name": "dwzteam/dwz_jui",
+        "version": "1.0",
+        "source": {
+          "url": "https://github.com/dwzteam/dwz_jui.git",
+          "type": "git",
+          "reference": "master"
         }
-    ],
-    "minimum-stability": "dev"
+      }
+    }
+  ],
+  "require": {
+    "matyhtf/swoole_framework": "1.16.*",
+    "dwzteam/dwz_jui": "1.0"
+  }
 }

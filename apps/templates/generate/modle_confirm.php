@@ -7,8 +7,8 @@
 					Model名称：
 				</dt>
 				<dd>
-					<input type="text" name="modelName" maxlength="20" class="required" value="<?php echo $model["modelName"]; ?>" />
-					<input type="hidden" name="name" maxlength="20"  value="<?php echo $model["name"]; ?>" />
+					<input type="text" name="modelName" maxlength="30" class="required" value="<?php echo $model["modelName"]; ?>" />
+					<input type="hidden" name="name" maxlength="30"  value="<?php echo $model["name"]; ?>" />
 					<span class="info">建议不要修改 <?php if ($model["isModel"]) { ?>当前Model已经存在<?php } ?></span>
 				</dd>
 			</dl>
