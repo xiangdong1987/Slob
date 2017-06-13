@@ -30,5 +30,5 @@ DWZ官方DEMO：(http://www.j-ui.com/)
 
 版本
 ----
-*v1.0.0 内嵌框架版本
-*v2.0.1 使用composer管理依赖
+* v1.0.0 内嵌框架版本
+* v2.0.1 使用composer管理依赖
